@@ -1,0 +1,183 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Health Notes -- The Online Archive of Medical Notation for
+Health Care Practitioners</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+display: grid;
+width: 950px;
+height: 750px;
+grid-template-columns: 200px 1fr 1fr;
+grid-template-rows: 80px 1fr 1fr 100px;
+grid-template-areas:
+"sidebar aside aside"
+"sidebar aside aside"
+"sidebar aside aside"
+"sidebar aside aside"
+"sidebar footer footer";
+}
+.container > div {
+height: 100%;
+background-size: cover;
+background-attachment: fixed;
+}
+.container > div:hover {
+opacity: 0.7;
+transform: scale(0.98);
+}
+
+.container > div:nth-of-type(6) {
+grid-column: 3 / 5;
+}
+
+.container > div:nth-of-type(10) {
+grid-column: 1 / 3;
+}
+
+
+.bg1 {
+background: url('https://raw.githubusercontent.com/MsWendyKH/HealthNotesChallenge/main/Pic%201.png');
+}
+.bg2 {
+background: url('https://raw.githubusercontent.com/MsWendyKH/HealthNotesChallenge/MsWendyKH-patch-1/smallmess.png');
+}
+.header {
+grid-area: header;
+}
+
+.sidebar {
+grid-area: sidebar;
+}
+
+.aside {
+grid-area: aside;
+background-image: linear-gradient(130deg, #FFFFFF 0%, #FFFFFF 85%, #FFFFFF 100%);
+float: right;
+margin: 0 0 0 1px;
+}
+
+
+
+.footer {
+grid-area: footer;
+grid-row: 5/ 5;
+grid-column: 1 / 4;
+}
+
+
+
+
+
+/* OTHER STYLES */
+
+body {
+background-color: #FFFFFF;
+display: flex;
+justify-content: center;
+padding: 20px;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.header {
+background-color: #eaffeb;
+background-image: linear-gradient(-150deg, #63D0C7 0%, #eaffeb 127%);
+}
+
+.sidebar {
+padding-top: 7.5px;
+padding-left: 7.5px;
+padding-right: 7.5px;
+padding-bottom: 0px;
+background-color: #eaffeb;
+background-image: linear-gradient(180deg, #eaffeb 0%, #63D0C7 80%)
+}
+
+.aside {
+background-image: linear-gradient(130deg, #FFFFFF 0%, #FFFFFF 85%, #FFFFFF 100%);
+float: right;
+justify-content: "right";
+margin: 0 0 0 1px;
+}
+#hp {
+float: right;
+margin: 0 0 0 1px;
+}
+.footer {
+background-color: #eaffeb;
+background-image: linear-gradient(160deg, #63D0C7 0%, #eaffeb 127%);
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="sidebar">
+<pre><img src="https://raw.githubusercontent.com/MsWendyKH/HealthNotesChallenge/main/Pic%201.png"></pre>
+<p> <font size="0">Feel free to browse health notes by
+practitioner, condition, or treatment using the drop down
+menus below, or enter your own submission to the right.</font></p>
+<form> <label for="practitioner">PRACTITIONER</label><br>
+<select name="practitioner">
+<option value="option 1">Option 1</option>
+<option value="option 2">Option 2</option>
+<option value="option 3">Option 3</option>
+</select>
+<br>
+<br>
+<label for="conditionn">CONDITION</label><br>
+<select name="condition">
+<option value="option 1">Option 1</option>
+<option value="option 2">Option 2</option>
+<option value="option 3">Option 3</option>
+</select>
+<br>
+<br>
+<label for="treatment">TREATMENT</label><br>
+<select name="treatment">
+<option value="option 1">Option 1</option>
+<option value="option 2">Option 2</option>
+<option value="option 3">Option 3</option>
+</select>
+<br>
+<br>
+<a moz-do-not-send="true" href="index.html"><button
+type="Submit">RE-ENTER CREDENTIALS</button></a> </form>
+</div>
+<br>
+<meta charset="utf-8">
+<div class="aside"> <img
+src="https://raw.githubusercontent.com/MsWendyKH/HealthNotesChallenge/main/smallmess.png"
+id="hp" moz-do-not-send="true" alt="Health Notes: Messages
+That Save Lives" width="373" height="225" align="right">
+<table width="749" height="290" cellspacing="2" cellpadding="2"
+border="0">
+<tbody>
+<tr>
+<td valign="top">
+<meta charset="utf-8">
+<br>
+<span style="box-sizing: border-box; font-weight: 700;">Welcome
+to Health Notes!<br style="box-sizing: border-box;">
+<br style="box-sizing: border-box;">
+Please enter your own submission below:<br>
+<br>
+</span> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="footer"><font size="-2">Dislcaimer: This website is
+for informational purposes only. In no way, shape, or form
+should this website, its users, or its creators be considered
+to be practicing medicine, or providing medical advice. The
+goal of this website is to foster dialogue between
+practitioners regarding medical conditons and their
+treatments, especially focusing on clinical trials being
+evaluated by the FDA.</font><br>
+<b><font size="-2">by cassandra, daniel, and wendy ©2021</font></b></div>
+</div>
+</body>
+</html>
+
